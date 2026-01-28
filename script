@@ -84,10 +84,11 @@ document.addEventListener("DOMContentLoaded", type);
 </script>
 
 <script>
+// 5. Time animation for worklet — FIXED
 let t = 0;
 function animate() {
   t += 0.02;
-  document.documentElement.style.setProperty('--t', t);
+  document.body.style.setProperty('--t', t);
   requestAnimationFrame(animate);
 }
 animate();
